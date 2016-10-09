@@ -1,0 +1,150 @@
+$twitter: #2daae1;
+$twitter-drk: #2899ca;
+$orange: #e1642d;
+$orange-drk: #ca5a28;
+$white: #f7f7f7;
+$black: #000;
+$text: #444;
+$bg: #333;
+$gold: #e4c442;
+// js styles
+h2 {
+  font-size: 36px;
+}
+
+// styles
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $bg;
+}
+
+blockquote {
+  width: 75%;
+  min-width: 50%;
+  height: 300px;
+  border-radius: 5px;
+  background: $gold;
+  box-shadow: 5px 5px 5px rgba($black, .5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+quote {
+  quotes: "\201C""\201D""\2018""\2019";
+  #quoteText {
+    color: $text;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+  }
+  #quoteAuthor {
+    color: $white;
+    text-shadow: 1px 1px 1px rgba($black, .6);
+    font-size: 1.6em;
+    text-align: right;
+    margin-right: 50px;
+  }
+  &::before {
+    color: $orange;
+    content: open-quote;
+    font-size: 7em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+    text-shadow: 2px 2px 4px rgba($black, .5);
+  }
+}
+
+.btn-group {
+  width: 25%;
+  height: 50px;
+  padding: 5px;
+  display: flex;
+
+  button {
+    border: 0;
+    width: 50%;
+    margin: 0 5px 0 5px;
+    border-radius: 2px;
+    box-shadow: 2px 5px 5px rgba($black, .4);
+    transition: all .3s ease-in-out;
+  }
+  a {
+    border: 0;
+    width: 50%;
+    margin: 0 5px 0 5px;
+    border-radius: 2px;
+    transition: all .3s ease-in-out;
+  }
+  
+  .fa {
+    color: $white;
+    text-shadow: 1px 2px 2px rgba($black,.3);
+  }
+}
+
+.twitter-btn {
+  display: none;
+}
+
+.quote-btn {
+  background: $orange;
+  
+  &:hover {
+    background: $orange-drk;
+  }
+}
+
+.twitter-share-button {
+  background: $twitter;
+  box-shadow: 2px 5px 5px rgba($black, .4);
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  
+  &:hover {
+    background: $twitter-drk;
+  }
+}
+
+[class$="-btn"]:hover {
+  box-shadow: 5px 10px 10px rgba($black, .6);
+}
+
+/*.error {
+  width: 100%;
+  height: 100%;
+  background: $black;
+  opacity: .8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .error-close {
+    width: 50px;
+    height: 50px;
+    background: $white;
+    border-radius: 50%;
+    position: absolute;
+    border: 0;
+    top: 25%;
+    font-weight: bold;
+    color: red;
+    outline: none;
+  }
+  h2 {
+    color: $white;
+  }
+}*/
